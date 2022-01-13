@@ -116,6 +116,9 @@ class Topbar extends Component {
     if (this.props.currentPath === "/cards") {
       return 4;
     }
+    if (this.props.currentPath === "/trs_trade") {
+      return 5;
+    }
   };
 
   render() {
@@ -129,15 +132,15 @@ class Topbar extends Component {
               <div className={classes.inline}>
                 <Typography variant="h6" color="inherit" noWrap>
                   <Link to="/" className={classes.link}>
-                    <img width={20} src={logo} alt="" />
-                    <span className={classes.tagline}>Material Sense</span>
+                    <img width={50} src='https://www.secor-am.com/wp-content/uploads/2021/02/cropped-SECOR-favicon-512x512-2.png' alt="" />
+                    {/*<span className={classes.tagline}>SECOR Sense</span>*/}
                   </Link>
                 </Typography>
               </div>
               {!this.props.noTabs && (
                 <React.Fragment>
                   <div className={classes.productLogo}>
-                    <Typography>A material UI Template</Typography>
+                    <Typography>SECOR Sense</Typography>
                   </div>
                   <div className={classes.iconContainer}>
                     <IconButton

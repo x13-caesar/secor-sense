@@ -20,8 +20,12 @@ const Menu = [
     pathname: "/cards"
   },
   {
-    label: "Github",
-    pathname: "https://github.com/alexanmtz/material-sense",
+    label: "TRS Trade",
+    pathname: "/trs_trade"
+  },
+  {
+    label: "Co. Page",
+    pathname: "https://www.secor-am.com/en-us/",
     external: true
   }
 

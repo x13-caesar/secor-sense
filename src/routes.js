@@ -6,6 +6,7 @@ import Cards from './components/Cards'
 import Main from './components/Main'
 import Signup from './components/Signup'
 import ScrollToTop from './components/ScrollTop'
+import TRSTrade from "./components/TRSTrade";
 
 export default props => (
     <HashRouter>
@@ -16,6 +17,7 @@ export default props => (
           <Route exact path='/signup' component={ Signup } />
           <Route exact path='/wizard' component={ Wizard } />
           <Route exact path='/cards' component={ Cards } />
+            <Route exact path='/trs_trade' component={ TRSTrade } />
         </Switch>
       </ScrollToTop>
     </HashRouter>
